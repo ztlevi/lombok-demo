@@ -10,14 +10,14 @@ import lombok.Value;
 @JsonDeserialize(builder = AddressLombok.AddressLombokBuilder.class)
 public class AddressLombok {
 
-    String street;
-    String zipCode;
-    String city;
-    String province;
-    String country;
+  String street;
+  String zipCode;
+  String city;
+  String province;
+  String country;
 
-    @JsonPOJOBuilder(withPrefix = "")
-    public static class AddressLombokBuilder {
-        // Lombok will add the rest
-    }
+  @JsonPOJOBuilder(withPrefix = "")
+  public static class AddressLombokBuilder {
+    // Lombok will add the rest
+  }
 }
