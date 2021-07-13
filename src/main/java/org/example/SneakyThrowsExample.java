@@ -12,6 +12,15 @@ public class SneakyThrowsExample implements Runnable {
     return new String(bytes, "UTF-8");
   }
 
+  @SneakyThrows({IOException.class, ParseException.class})
+  public void filtersExceptions(String fileName) {
+    if (fileName.startsWith("0")) {
+      throw new ParseException("test", 1);
+    } else {
+      throw new IOException();
+    }
+  }
+
   @SneakyThrows
   public void run() {
     throw new Throwable();
