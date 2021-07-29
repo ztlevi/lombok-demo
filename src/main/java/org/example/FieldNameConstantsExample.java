@@ -7,7 +7,7 @@ import lombok.AccessLevel;
 // lombok.fieldNameConstants.uppercase = true
 @FieldNameConstants
 public class FieldNameConstantsExample {
-  private String i-am-afield;
+  private String iAmAField;
   private int andSoAmI;
   @FieldNameConstants.Exclude private int asAmI;
 }

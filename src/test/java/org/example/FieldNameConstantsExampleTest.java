@@ -8,6 +8,6 @@ public class FieldNameConstantsExampleTest {
 
     @Test
     void testFieldName() {
-        Assertions.assertEquals(FieldNameConstantsExample.Fields.I_AM_A_FIELD, "iAmAField");
+        Assertions.assertEquals(Fields.I_AM_A_FIELD, "iAmAField");
     }
 }
