@@ -11,10 +11,11 @@ import org.example.VanillaJavaBuilderExample.BuilderExampleBuilder;
 @Data
 @Builder
 @Jacksonized
-public class BuilderExample {
+public class BuilderExample<T> {
   @Builder.Default private long created = System.currentTimeMillis();
   private String name;
   private int age;
+  private T height;
   @Singular private Set<String> occupations;
 }
 

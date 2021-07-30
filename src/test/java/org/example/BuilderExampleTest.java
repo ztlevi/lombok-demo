@@ -8,10 +8,11 @@ import org.junit.jupiter.api.Test;
 public class BuilderExampleTest {
   @Test
   public void testBuilderWithJackson() {
-    BuilderExample example =
-        BuilderExample.builder()
+    BuilderExample<Double> example =
+        BuilderExample.<Double>builder()
             .name("hello")
             .age(10)
+            .height(181.4)
             .occupation("cook")
             .occupation("engineer")
             .build();
